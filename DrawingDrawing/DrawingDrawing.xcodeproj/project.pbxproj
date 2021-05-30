@@ -14,6 +14,7 @@
 		7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344482663645800D4040D /* DefaultButtonLabel.swift */; };
 		7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */; };
 		7DD344522663878000D4040D /* DrawHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344512663878000D4040D /* DrawHistory.swift */; };
+		7DD34454266387E600D4040D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD34453266387E600D4040D /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7DD344482663645800D4040D /* DefaultButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonLabel.swift; sourceTree = "<group>"; };
 		7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonLabel.swift; sourceTree = "<group>"; };
 		7DD344512663878000D4040D /* DrawHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawHistory.swift; sourceTree = "<group>"; };
+		7DD34453266387E600D4040D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */,
 				7DD344482663645800D4040D /* DefaultButtonLabel.swift */,
+				7DD34453266387E600D4040D /* DrawingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				7DD344522663878000D4040D /* DrawHistory.swift in Sources */,
 				7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */,
 				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
+				7DD34454266387E600D4040D /* DrawingView.swift in Sources */,
 				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
 				7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */,
 			);
