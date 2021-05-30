@@ -10,10 +10,10 @@ import SwiftUI
 struct DrawingScene: View {
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             header
             
-            Spacer()
+            DrawingView()
         }
     }
     
