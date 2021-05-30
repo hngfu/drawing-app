@@ -9,7 +9,14 @@ import Foundation
 
 final class DrawingViewModel: ObservableObject {
     
-    @Published var drewHistories = [DrawHistory]()
+    @Published var drewHistories = [DrawHistory]() {
+        didSet {
+            if drewHistories.count > oldValue.count,
+               isRedoing == false {
+                drawingHistories = []
+            }
+        }
+    }
     private var drawingHistories = [DrawHistory]()
     @Published var tool: ToolType = .pencil
 
@@ -21,6 +28,8 @@ final class DrawingViewModel: ObservableObject {
         drawingHistories.isEmpty == false
     }
     
+    private var isRedoing = false
+    
     func undo() {
         guard canUndo else { return }
         guard let history = drewHistories.popLast() else { return }
@@ -29,8 +38,10 @@ final class DrawingViewModel: ObservableObject {
     
     func redo() {
         guard canRedo else { return }
+        isRedoing = true
         guard let history = drawingHistories.popLast() else { return }
         drewHistories.append(history)
+        isRedoing = false
     }
     
     func set(tool: ToolType) {
