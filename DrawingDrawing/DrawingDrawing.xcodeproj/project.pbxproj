@@ -17,6 +17,7 @@
 		7DD34454266387E600D4040D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD34453266387E600D4040D /* DrawingView.swift */; };
 		7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344562663AB7100D4040D /* DrawingUIView.swift */; };
 		7DD344592663B01500D4040D /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344582663B01500D4040D /* DrawingViewModel.swift */; };
+		7DD3445C2663BB8700D4040D /* ImagePickerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7DD34453266387E600D4040D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		7DD344562663AB7100D4040D /* DrawingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUIView.swift; sourceTree = "<group>"; };
 		7DD344582663B01500D4040D /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD3444E2663668B00D4040D /* Drawing */,
+				7DD3445A2663BB7300D4040D /* ImagePicker */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -111,9 +114,9 @@
 		7DD3444F2663669800D4040D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7DD34453266387E600D4040D /* DrawingView.swift */,
 				7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */,
 				7DD344482663645800D4040D /* DefaultButtonLabel.swift */,
-				7DD34453266387E600D4040D /* DrawingView.swift */,
 				7DD344552663AB5F00D4040D /* UIKit */,
 			);
 			path = Views;
@@ -133,6 +136,14 @@
 				7DD344562663AB7100D4040D /* DrawingUIView.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7DD3445A2663BB7300D4040D /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
 				7DD34454266387E600D4040D /* DrawingView.swift in Sources */,
 				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
+				7DD3445C2663BB8700D4040D /* ImagePickerScene.swift in Sources */,
 				7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

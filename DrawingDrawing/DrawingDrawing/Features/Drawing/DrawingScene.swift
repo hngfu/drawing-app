@@ -9,13 +9,14 @@ import SwiftUI
 
 struct DrawingScene: View {
     
-    @ObservedObject var viewModel = DrawingViewModel()
+    @ObservedObject private var viewModel = DrawingViewModel()
+    @State private var showingImagePicker = false
+    @State private var backgroundImage: UIImage?
     
     var body: some View {
         VStack(spacing: 0) {
             header
-            
-            DrawingView(histories: $viewModel.drewHistories, tool: $viewModel.tool)
+            drawing
         }
     }
     
@@ -29,7 +30,14 @@ struct DrawingScene: View {
             Spacer()
                 .frame(maxWidth: 88)
             
-            DefaultButtonLabel(text: "ADD")
+            Button(action: {
+                showingImagePicker.toggle()
+            }, label: {
+                DefaultButtonLabel(text: "ADD")
+            })
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePickerScene(image: $backgroundImage)
+            }
             
             Spacer()
                 .frame(maxWidth: .infinity)
@@ -70,6 +78,18 @@ struct DrawingScene: View {
         .frame(maxWidth: .infinity)
         .padding()
         .background(Color(UIColor.systemGray4))
+    }
+    
+    var drawing: some View {
+        ZStack {
+            if let image = backgroundImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
+            
+            DrawingView(histories: $viewModel.drewHistories, tool: $viewModel.tool)
+        }
     }
 }
 
