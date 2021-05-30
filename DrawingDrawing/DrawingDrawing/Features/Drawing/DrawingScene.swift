@@ -10,8 +10,8 @@ import SwiftUI
 struct DrawingScene: View {
     
     @ObservedObject private var viewModel = DrawingViewModel()
-    @State private var showingImagePicker = false
     @State private var backgroundImage: UIImage?
+    @State private var showingImagePicker = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -23,8 +23,19 @@ struct DrawingScene: View {
     var header: some View {
         HStack {
             HStack {
-                DefaultButtonLabel(text: "SAVE")
-                DefaultButtonLabel(text: "LOAD")
+                Button(action: {
+                    viewModel.save()
+                    saveImage()
+                }, label: {
+                    DefaultButtonLabel(text: "SAVE")
+                })
+                
+                Button(action: {
+                    viewModel.load()
+                    loadImage()
+                }, label: {
+                    DefaultButtonLabel(text: "LOAD")
+                })
             }
             
             Spacer()
@@ -88,7 +99,23 @@ struct DrawingScene: View {
                     .aspectRatio(contentMode: .fit)
             }
             
-            DrawingView(histories: $viewModel.drewHistories, tool: $viewModel.tool)
+            DrawingView(histories: $viewModel.drewHistories,
+                        tool: $viewModel.tool)
+        }
+    }
+    
+    //MARK: - Private
+    private func saveImage() {
+        if let image = backgroundImage,
+           let data = UIImage.jpegData(image)(compressionQuality: 0.1) {
+            UserDefaults.standard.set(data, forKey: "image")
+        }
+    }
+    
+    private func loadImage() {
+        if let data = UserDefaults.standard.object(forKey: "image") as? NSData,
+           let image = UIImage(data: data as Data) {
+            backgroundImage = image
         }
     }
 }
