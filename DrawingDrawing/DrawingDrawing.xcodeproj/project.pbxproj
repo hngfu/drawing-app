@@ -15,6 +15,7 @@
 		7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */; };
 		7DD344522663878000D4040D /* DrawHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344512663878000D4040D /* DrawHistory.swift */; };
 		7DD34454266387E600D4040D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD34453266387E600D4040D /* DrawingView.swift */; };
+		7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344562663AB7100D4040D /* DrawingUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonLabel.swift; sourceTree = "<group>"; };
 		7DD344512663878000D4040D /* DrawHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawHistory.swift; sourceTree = "<group>"; };
 		7DD34453266387E600D4040D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		7DD344562663AB7100D4040D /* DrawingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */,
 				7DD344482663645800D4040D /* DefaultButtonLabel.swift */,
 				7DD34453266387E600D4040D /* DrawingView.swift */,
+				7DD344552663AB5F00D4040D /* UIKit */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +122,14 @@
 				7DD344512663878000D4040D /* DrawHistory.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7DD344552663AB5F00D4040D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7DD344562663AB7100D4040D /* DrawingUIView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */,
 				7DD344522663878000D4040D /* DrawHistory.swift in Sources */,
 				7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */,
 				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
