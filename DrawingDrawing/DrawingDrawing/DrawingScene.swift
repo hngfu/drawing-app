@@ -9,14 +9,18 @@ import SwiftUI
 
 struct DrawingScene: View {
     var body: some View {
-        NavigationView {
-            Text("Hello, World!")
-        }
+        Text("Hello, World!")
     }
 }
 
 struct DrawingScene_Previews: PreviewProvider {
     static var previews: some View {
-        DrawingScene()
+        Group {
+            DrawingScene()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+            
+            DrawingScene()
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (5th generation)"))
+        }
     }
 }
