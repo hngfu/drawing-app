@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2F162663538A0002F22C /* DrawingDrawingApp.swift */; };
-		7D0A2F192663538B0002F22C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2F182663538B0002F22C /* ContentView.swift */; };
 		7D0A2F1B2663538D0002F22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2F1A2663538D0002F22C /* Assets.xcassets */; };
 		7D0A2F1E2663538D0002F22C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2F1D2663538D0002F22C /* Preview Assets.xcassets */; };
+		7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2F25266354710002F22C /* DrawingScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D0A2F132663538A0002F22C /* DrawingDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0A2F162663538A0002F22C /* DrawingDrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDrawingApp.swift; sourceTree = "<group>"; };
-		7D0A2F182663538B0002F22C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D0A2F1A2663538D0002F22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0A2F1D2663538D0002F22C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D0A2F1F2663538D0002F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0A2F25266354710002F22C /* DrawingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				7D0A2F162663538A0002F22C /* DrawingDrawingApp.swift */,
-				7D0A2F182663538B0002F22C /* ContentView.swift */,
+				7D0A2F25266354710002F22C /* DrawingScene.swift */,
 				7D0A2F1A2663538D0002F22C /* Assets.xcassets */,
 				7D0A2F1F2663538D0002F22C /* Info.plist */,
 				7D0A2F1C2663538D0002F22C /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0A2F192663538B0002F22C /* ContentView.swift in Sources */,
+				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
 				7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
