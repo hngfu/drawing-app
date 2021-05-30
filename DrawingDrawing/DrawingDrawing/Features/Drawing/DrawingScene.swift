@@ -12,6 +12,7 @@ struct DrawingScene: View {
     var body: some View {
         VStack {
             header
+            
             Spacer()
         }
     }
@@ -58,6 +59,10 @@ struct DrawingScene_Previews: PreviewProvider {
             
             DrawingScene()
                 .previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch) (5th generation)"))
+            
+            DrawingScene()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 12 mini"))
+            
         }
     }
 }
