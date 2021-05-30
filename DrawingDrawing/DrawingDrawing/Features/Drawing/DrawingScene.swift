@@ -20,7 +20,7 @@ struct DrawingScene: View {
         }
     }
     
-    var header: some View {
+    private var header: some View {
         HStack {
             HStack {
                 Button(action: {
@@ -91,7 +91,7 @@ struct DrawingScene: View {
         .background(Color(UIColor.systemGray4))
     }
     
-    var drawing: some View {
+    private var drawing: some View {
         ZStack {
             if let image = backgroundImage {
                 Image(uiImage: image)
@@ -104,7 +104,7 @@ struct DrawingScene: View {
         }
     }
     
-    //MARK: - Private
+    //MARK: - Methods
     private func saveImage() {
         if let image = backgroundImage,
            let data = UIImage.jpegData(image)(compressionQuality: 0.1) {

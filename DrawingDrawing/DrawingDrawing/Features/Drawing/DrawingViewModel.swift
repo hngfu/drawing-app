@@ -16,6 +16,7 @@ final class DrawingViewModel: ObservableObject {
     var canUndo: Bool {
         drewHistories.isEmpty == false
     }
+    
     var canRedo: Bool {
         drawingHistories.isEmpty == false
     }
