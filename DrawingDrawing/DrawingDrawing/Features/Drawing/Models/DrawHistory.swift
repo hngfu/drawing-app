@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DrawHistory {
+final class DrawHistory: Codable {
     var tool: ToolType
     var points = [CGPoint]()
     
@@ -16,7 +16,7 @@ final class DrawHistory {
     }
 }
 
-enum ToolType {
+enum ToolType: String, Codable {
     case pencil
     case eraser
 }
