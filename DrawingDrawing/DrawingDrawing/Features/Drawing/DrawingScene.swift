@@ -9,14 +9,13 @@ import SwiftUI
 
 struct DrawingScene: View {
     
-    @State var tool: ToolType = .pencil
-    @State var histories = [DrawHistory]()
+    @ObservedObject var viewModel = DrawingViewModel()
     
     var body: some View {
         VStack(spacing: 0) {
             header
             
-            DrawingView(histories: $histories, tool: $tool)
+            DrawingView(histories: $viewModel.histories, tool: viewModel.tool)
         }
     }
     
@@ -45,13 +44,13 @@ struct DrawingScene: View {
             
             HStack {
                 Button(action: {
-                    tool = .pencil
+                    viewModel.set(tool: .pencil)
                 }, label: {
                     DefaultButtonLabel(text: "PEN")
                 })
                 
                 Button(action: {
-                    tool = .eraser
+                    viewModel.set(tool: .eraser)
                 }, label: {
                     DefaultButtonLabel(text: "ERASE")
                 })

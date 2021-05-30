@@ -16,6 +16,7 @@
 		7DD344522663878000D4040D /* DrawHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344512663878000D4040D /* DrawHistory.swift */; };
 		7DD34454266387E600D4040D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD34453266387E600D4040D /* DrawingView.swift */; };
 		7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344562663AB7100D4040D /* DrawingUIView.swift */; };
+		7DD344592663B01500D4040D /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344582663B01500D4040D /* DrawingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7DD344512663878000D4040D /* DrawHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawHistory.swift; sourceTree = "<group>"; };
 		7DD34453266387E600D4040D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		7DD344562663AB7100D4040D /* DrawingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUIView.swift; sourceTree = "<group>"; };
+		7DD344582663B01500D4040D /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7D0A2F25266354710002F22C /* DrawingScene.swift */,
+				7DD344582663B01500D4040D /* DrawingViewModel.swift */,
 				7DD3444F2663669800D4040D /* Views */,
 				7DD344502663876C00D4040D /* Models */,
 			);
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */,
+				7DD344592663B01500D4040D /* DrawingViewModel.swift in Sources */,
 				7DD344522663878000D4040D /* DrawHistory.swift in Sources */,
 				7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */,
 				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
