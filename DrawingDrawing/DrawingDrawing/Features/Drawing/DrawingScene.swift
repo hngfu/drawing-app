@@ -15,7 +15,7 @@ struct DrawingScene: View {
         VStack(spacing: 0) {
             header
             
-            DrawingView(histories: $viewModel.histories, tool: viewModel.tool)
+            DrawingView(histories: $viewModel.drewHistories, tool: $viewModel.tool)
         }
     }
     
@@ -35,8 +35,19 @@ struct DrawingScene: View {
                 .frame(maxWidth: .infinity)
             
             HStack {
-                SymbolButtonLabel(symbolName: "arrow.left")
-                SymbolButtonLabel(symbolName: "arrow.right")
+                Button(action: {
+                    viewModel.undo()
+                }, label: {
+                    SymbolButtonLabel(symbolName: "arrow.left")
+                })
+                .disabled(viewModel.canUndo == false)
+                
+                Button(action: {
+                    viewModel.redo()
+                }, label: {
+                    SymbolButtonLabel(symbolName: "arrow.right")
+                })
+                .disabled(viewModel.canRedo == false)
             }
             
             Spacer()

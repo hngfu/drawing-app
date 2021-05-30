@@ -10,7 +10,7 @@ import SwiftUI
 struct DrawingView: UIViewRepresentable {
     
     @Binding var histories: [DrawHistory]
-    let tool: ToolType
+    @Binding var tool: ToolType
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
@@ -24,6 +24,7 @@ struct DrawingView: UIViewRepresentable {
     
     func updateUIView(_ uiView: DrawingUIView, context: Context) {
         uiView.histories = histories
+        uiView.setNeedsDisplay()
     }
     
     final class Coordinator: DrawingUIViewDelegate {
@@ -48,6 +49,6 @@ struct DrawingView: UIViewRepresentable {
 
 struct DrawingView_Previews: PreviewProvider {
     static var previews: some View {
-        DrawingView(histories: .constant([]), tool: .pencil)
+        DrawingView(histories: .constant([]), tool: .constant(.pencil))
     }
 }
