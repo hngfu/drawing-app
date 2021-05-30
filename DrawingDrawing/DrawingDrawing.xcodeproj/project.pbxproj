@@ -11,6 +11,7 @@
 		7D0A2F1B2663538D0002F22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2F1A2663538D0002F22C /* Assets.xcassets */; };
 		7D0A2F1E2663538D0002F22C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2F1D2663538D0002F22C /* Preview Assets.xcassets */; };
 		7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2F25266354710002F22C /* DrawingScene.swift */; };
+		7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344482663645800D4040D /* DefaultButtonLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7D0A2F1D2663538D0002F22C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D0A2F1F2663538D0002F22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D0A2F25266354710002F22C /* DrawingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingScene.swift; sourceTree = "<group>"; };
+		7DD344482663645800D4040D /* DefaultButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				7D0A2F162663538A0002F22C /* DrawingDrawingApp.swift */,
 				7D0A2F25266354710002F22C /* DrawingScene.swift */,
+				7DD344482663645800D4040D /* DefaultButtonLabel.swift */,
 				7D0A2F1A2663538D0002F22C /* Assets.xcassets */,
 				7D0A2F1F2663538D0002F22C /* Info.plist */,
 				7D0A2F1C2663538D0002F22C /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
 				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
 				7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */,
 			);
