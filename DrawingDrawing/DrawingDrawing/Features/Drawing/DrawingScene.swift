@@ -9,11 +9,14 @@ import SwiftUI
 
 struct DrawingScene: View {
     
+    @State var tool: ToolType = .pencil
+    @State var histories = [DrawHistory]()
+    
     var body: some View {
         VStack(spacing: 0) {
             header
             
-            DrawingView()
+            DrawingView(histories: $histories, tool: $tool)
         }
     }
     
