@@ -18,6 +18,7 @@
 		7DD344572663AB7200D4040D /* DrawingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344562663AB7100D4040D /* DrawingUIView.swift */; };
 		7DD344592663B01500D4040D /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344582663B01500D4040D /* DrawingViewModel.swift */; };
 		7DD3445C2663BB8700D4040D /* ImagePickerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */; };
+		7DD344622663CE4300D4040D /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344612663CE4300D4040D /* UserDefaults+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7DD344562663AB7100D4040D /* DrawingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUIView.swift; sourceTree = "<group>"; };
 		7DD344582663B01500D4040D /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
 		7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerScene.swift; sourceTree = "<group>"; };
+		7DD344612663CE4300D4040D /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7DD3444D2663668400D4040D /* Features */,
+				7DD3445D2663CE1100D4040D /* Utils */,
 				7DD3444C2663667B00D4040D /* App */,
 				7D0A2F1A2663538D0002F22C /* Assets.xcassets */,
 				7D0A2F1F2663538D0002F22C /* Info.plist */,
@@ -144,6 +147,22 @@
 				7DD3445B2663BB8700D4040D /* ImagePickerScene.swift */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		7DD3445D2663CE1100D4040D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7DD3445E2663CE1700D4040D /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7DD3445E2663CE1700D4040D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DD344612663CE4300D4040D /* UserDefaults+Codable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +243,7 @@
 				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
 				7DD3445C2663BB8700D4040D /* ImagePickerScene.swift in Sources */,
 				7D0A2F172663538B0002F22C /* DrawingDrawingApp.swift in Sources */,
+				7DD344622663CE4300D4040D /* UserDefaults+Codable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
