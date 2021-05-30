@@ -13,6 +13,7 @@
 		7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2F25266354710002F22C /* DrawingScene.swift */; };
 		7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344482663645800D4040D /* DefaultButtonLabel.swift */; };
 		7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */; };
+		7DD344522663878000D4040D /* DrawHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD344512663878000D4040D /* DrawHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7D0A2F25266354710002F22C /* DrawingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingScene.swift; sourceTree = "<group>"; };
 		7DD344482663645800D4040D /* DefaultButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonLabel.swift; sourceTree = "<group>"; };
 		7DD3444A266364BE00D4040D /* SymbolButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolButtonLabel.swift; sourceTree = "<group>"; };
+		7DD344512663878000D4040D /* DrawHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				7D0A2F25266354710002F22C /* DrawingScene.swift */,
 				7DD3444F2663669800D4040D /* Views */,
+				7DD344502663876C00D4040D /* Models */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -105,6 +108,14 @@
 				7DD344482663645800D4040D /* DefaultButtonLabel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7DD344502663876C00D4040D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7DD344512663878000D4040D /* DrawHistory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD344522663878000D4040D /* DrawHistory.swift in Sources */,
 				7DD3444B266364BE00D4040D /* SymbolButtonLabel.swift in Sources */,
 				7DD344492663645800D4040D /* DefaultButtonLabel.swift in Sources */,
 				7D0A2F26266354710002F22C /* DrawingScene.swift in Sources */,
