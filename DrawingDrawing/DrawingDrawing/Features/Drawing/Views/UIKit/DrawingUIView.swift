@@ -33,7 +33,7 @@ final class DrawingUIView: UIView {
                     context.addLine(to: point)
                 }
             }
-            context.setLineWidth(2.0)
+            context.setLineWidth(8.0)
             context.setLineCap(.round)
             context.setBlendMode(history.tool == .pencil ? .normal : .clear)
             context.setStrokeColor(UIColor.black.cgColor)
