@@ -44,8 +44,17 @@ struct DrawingScene: View {
                 .frame(maxWidth: 44)
             
             HStack {
-                DefaultButtonLabel(text: "PEN")
-                DefaultButtonLabel(text: "ERASE")
+                Button(action: {
+                    tool = .pencil
+                }, label: {
+                    DefaultButtonLabel(text: "PEN")
+                })
+                
+                Button(action: {
+                    tool = .eraser
+                }, label: {
+                    DefaultButtonLabel(text: "ERASE")
+                })
             }
         }
         .frame(maxWidth: .infinity)
